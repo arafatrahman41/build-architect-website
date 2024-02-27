@@ -205,6 +205,10 @@ header {
    .container, .feature-list-container .feature-list-content, .feature-list-container .feature-list-image, .feature-container .feature-content, .feature-container .feature-image{
     width: 100%;
    }
+   .feature-list-container .feature-list-content .feature-list-details{
+    width: auto;
+    padding: 0;
+   }
    .feature-container .feature-image{
     grid-template-columns: 1fr;
    }
@@ -220,7 +224,7 @@ header {
     gap: 3.125rem;
    }
   .feature-list-container .feature-list-content, .feature-list-container .feature-list-image, .feature-container .feature-content, .feature-container .feature-image{
-    width: 100%;
+    width: 99%;
    }
    .feature-list-container .feature-list-content .feature-list-details{
     width: auto;
