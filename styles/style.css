@@ -141,7 +141,7 @@ header {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .feature-list-container .feature-list-content .feature-list-details h3 {
   color: #131313;
@@ -172,68 +172,96 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
-  padding:1rem 1.8rem;
+  padding: 1rem 1.8rem;
 }
-.feature-list-container .feature-list-image .expreience .expreience-design{
-    color: #FFF;
-    font-family: "Work Sans";
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px; 
+.feature-list-container .feature-list-image .expreience .expreience-design {
+  color: #fff;
+  font-family: "Work Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
 }
+/* some facts section style */
+.some-facts-container{
+  margin-top: 8.1rem;
+}
+.some-facts-container .achievements{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: .5rem;
+  margin: 6.25rem 0 10rem 0;
+}
+.some-facts-container .achievements > div {
+  width: 8.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+}
+
 /* Responsive style with media query */
 /* small device */
 @media screen and (max-width: 576px) {
-   .nav-container, .feature-list-container{
+  .nav-container,
+  .feature-list-container {
     flex-direction: column;
-   } 
-   .nav-container > div ul{
+  }
+  .nav-container > div ul {
     margin-top: 3rem;
     gap: 1.7rem;
-   }
-   .banner-content h1{
+  }
+  .banner-content h1 {
     font-size: 3.5rem;
-   }
-   .feature-container{
+  }
+  .feature-container {
     flex-direction: column-reverse;
-   }
-   .feature-list-container .feature-list-image .expreience{
+  }
+  .feature-list-container .feature-list-image .expreience {
     width: 40%;
-    padding:.5rem .8rem;
-   }
-   .container, .feature-list-container .feature-list-content, .feature-list-container .feature-list-image, .feature-container .feature-content, .feature-container .feature-image{
+    padding: 0.5rem 0.8rem;
+  }
+  .container,
+  .feature-list-container .feature-list-content,
+  .feature-list-container .feature-list-image,
+  .feature-container .feature-content,
+  .feature-container .feature-image {
     width: 100%;
-   }
-   .feature-list-container .feature-list-content .feature-list-details{
+  }
+  .feature-list-container .feature-list-content .feature-list-details {
     width: auto;
     padding: 0;
-   }
-   .feature-container .feature-image{
+  }
+  .feature-container .feature-image {
     grid-template-columns: 1fr;
-   }
+  }
 }
 
 /* medium device */
-@media screen and (min-width: 577px) and (max-width:992px) {
-  .nav-container,.feature-list-container{
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .nav-container,
+  .feature-list-container {
     flex-direction: column;
-  }  
-  .nav-container > div ul{
+  }
+  .nav-container > div ul {
     margin-top: 3rem;
     gap: 3.125rem;
-   }
-  .feature-list-container .feature-list-content, .feature-list-container .feature-list-image, .feature-container .feature-content, .feature-container .feature-image{
+  }
+  .feature-list-container .feature-list-content,
+  .feature-list-container .feature-list-image,
+  .feature-container .feature-content,
+  .feature-container .feature-image {
     width: 99%;
-   }
-   .feature-list-container .feature-list-content .feature-list-details{
+  }
+  .feature-list-container .feature-list-content .feature-list-details {
     width: auto;
-   }
-  .feature-container{
+  }
+  .feature-container {
     flex-direction: column-reverse;
-   }
-    .feature-list-container .feature-list-image .expreience{
-        width: 50%;
-        padding:.5rem 1rem;
-    }
+  }
+  .feature-list-container .feature-list-image .expreience {
+    width: 50%;
+    padding: 0.5rem 1rem;
+  }
 }
