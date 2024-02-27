@@ -5,14 +5,10 @@
   padding: 0;
   font-family: "Work Sans", sans-serif;
 }
-body {
-  border: 2px solid red;
-}
 .container {
   width: 75%;
   max-width: 1920;
   margin: 0 auto;
-  border: 2px solid green;
 }
 .primary-title {
   color: var(--Dark-01, #131313);
@@ -127,13 +123,15 @@ header {
 }
 .feature-list-container .feature-list-image img {
   width: 100%;
-  /* position: relative; */
+  /* margin-left: 5rem; */
 }
 .feature-list-container .feature-list-content {
   width: 48%;
 }
 .feature-list-container .feature-list-content h2 {
   margin-bottom: 1.5rem;
+  border-left: 5px solid #FF900E;
+  padding-left: .7rem;
 }
 .feature-list-container .feature-list-content .feature-list-details {
   width: 100%;
@@ -174,6 +172,9 @@ header {
   font-weight: 700;
   line-height: 70px;
   padding: 1rem 1.8rem;
+  position: relative;
+  bottom: 6.3rem;
+  margin-left: -5rem;
 }
 .feature-list-container .feature-list-image .expreience .expreience-design {
   color: #fff;
@@ -237,9 +238,14 @@ footer{
   .feature-container {
     flex-direction: column-reverse;
   }
+  .feature-list-container .feature-list-image img{
+    width: 80%;
+    margin-left: 4rem;
+  }
   .feature-list-container .feature-list-image .expreience {
-    width: 40%;
+    width: 50%;
     padding: 0.5rem 0.8rem;
+    margin-left: -.4rem;
   }
   .container,
   .feature-list-container .feature-list-content,
@@ -287,9 +293,14 @@ footer{
   .feature-container {
     flex-direction: column-reverse;
   }
+  .feature-list-container .feature-list-image img{
+    width: 89%;
+    margin-left: 4rem;
+  }
   .feature-list-container .feature-list-image .expreience {
     width: 50%;
     padding: 0.5rem 1rem;
+    margin-left: -.4rem;
   }
   .some-facts-container .achievements{
     margin-top: 3rem;
@@ -298,3 +309,4 @@ footer{
     gap: 1rem;
   }
 }
+
