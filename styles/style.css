@@ -126,7 +126,7 @@ header {
 }
 .feature-list-container .feature-list-image img {
   width: 100%;
-  position: relative;
+  /* position: relative; */
 }
 .feature-list-container .feature-list-content {
   width: 48%;
@@ -141,6 +141,7 @@ header {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: .5rem;
 }
 .feature-list-container .feature-list-content .feature-list-details h3 {
   color: #131313;
@@ -148,6 +149,7 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin: 1rem 0 1rem 0;
 }
 .feature-list-container .feature-list-content .feature-list-details p {
   color: #727272;
@@ -160,7 +162,6 @@ header {
   width: 48%;
 }
 .feature-list-container .feature-list-image .expreience {
-    /* position: absolute; */
   width: 50%;
   border-radius: 8px;
   text-align: center;
@@ -184,16 +185,51 @@ header {
 /* Responsive style with media query */
 /* small device */
 @media screen and (max-width: 576px) {
-    
+   .nav-container, .feature-list-container{
+    flex-direction: column;
+   } 
+   .nav-container > div ul{
+    margin-top: 3rem;
+    gap: 1.7rem;
+   }
+   .banner-content h1{
+    font-size: 3.5rem;
+   }
+   .feature-container{
+    flex-direction: column-reverse;
+   }
+   .feature-list-container .feature-list-image .expreience{
+    width: 40%;
+    padding:.5rem .8rem;
+   }
+   .container, .feature-list-container .feature-list-content, .feature-list-container .feature-list-image, .feature-container .feature-content, .feature-container .feature-image{
+    width: 100%;
+   }
+   .feature-container .feature-image{
+    grid-template-columns: 1fr;
+   }
 }
 
 /* medium device */
 @media screen and (min-width: 577px) and (max-width:992px) {
-  
-    
-
-
+  .nav-container,.feature-list-container{
+    flex-direction: column;
+  }  
+  .nav-container > div ul{
+    margin-top: 3rem;
+    gap: 3.125rem;
+   }
+  .feature-list-container .feature-list-content, .feature-list-container .feature-list-image, .feature-container .feature-content, .feature-container .feature-image{
+    width: 100%;
+   }
+   .feature-list-container .feature-list-content .feature-list-details{
+    width: auto;
+   }
+  .feature-container{
+    flex-direction: column-reverse;
+   }
     .feature-list-container .feature-list-image .expreience{
         width: 50%;
+        padding:.5rem 1rem;
     }
 }
