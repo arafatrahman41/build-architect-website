@@ -1,5 +1,118 @@
-*{
-    margin: 0;
-    padding: 0;
-    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
+/* shared style */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  border: 2px solid red;
+}
+.container {
+  width: 75%;
+  max-width: 1920;
+  margin: 0 auto;
+  border: 2px solid green;
+}
+.primary-title {
+  color: var(--Dark-01, #131313);
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.primary-description {
+  color: var(--Dark-03, #727272);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+.primary-button {
+  width: 11.25rem;
+  height: 4rem;
+  border-radius: 8px;
+  background: #ff900e;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+/* header section style */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+/* nav-container style */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  margin-bottom: 7.25rem;
+}
+.nav-container > div ul {
+  display: flex;
+  gap: 3.125rem;
+}
+.nav-container > div ul a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 1.1rem;
+}
+.nav-container > div ul li {
+  list-style: none;
+}
+/* banner style */
+.banner-content {
+  text-align: center;
+}
+.banner-content h1 {
+  font-size: 4rem;
+}
+.banner-content .banner-image img{
+  width: 100%;
+  margin: 1.8rem 0;
+}
+.banner-content p{
+    margin-top: 1rem;
+}
+.banner-content button{
+    margin-top: 2rem;
+}
+/* main section style */
+
+/* feature container style */
+.feature-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5.3rem 0 8.1rem 0;
+}
+.feature-container .feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 48%;
+}
+.feature-container .feature-image img{
+    width: 100%;
+}
+
+.feature-container .feature-content{
+    width: 48%;
+}
+.feature-container .feature-content *{
+    margin-bottom: 1.7rem;
+}
+.feature-container .feature-content h2{
+    font-weight: 500;
+}
+.feature-container .feature-content .quick{
+    color: #727272;
+}
+.feature-container .feature-content .feature{
+    color:#ff900e;
 }
